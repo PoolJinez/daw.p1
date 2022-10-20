@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background: url(../img/fondo.jpg) no-repeat center bottom;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+main {
+	color: #fff;
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+
+.container {
+	border: 5px solid  #000000;
+
+	padding: 10%;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	background: #5c0f06;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1F1C18, #530800);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1F1C18, #470700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.comprobante {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	height: 100%;
+	width: 100%;
+}
+
+.comprobante__label {
+	display: block;
+	font-weight: 800;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/* Nos ayudara a mantener el icono dentro del label */
+.comprobante__grupo-input {
+	position: relative;
+}
+
+.comprobante__input {
+	width: 85%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.comprobante__input:focus {
+	border: 5px solid #ffffff;
+	outline: none;
+	box-shadow: 5px 0px 45px rgba(255, 255, 255, 0.466);
+}
+
+.comprobante__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.comprobante__input-error-activo {
+	display: block;
+}
+
+.comprobante__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.comprobante__mensaje,
+.comprobante__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+
+.comprobante__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #ffffff;
+	color: #1F1C18;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.comprobante__mensaje-activo {
+	display: block;
+}
+
+.comprobante__mensaje p {
+	margin: 0;
+}
+
+.comprobante__grupo-btn-enviar,
+.comprobante__grupo-btn-guardar,
+.comprobante__grupo-btn-cancelar   {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comprobante__btn {
+	
+	height: 60px;
+	line-height: 60px;
+	width: 30%;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.comprobante__btn1 {
+	height: 30px;
+	line-height: 30px;
+	width: 60%;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.comprobante__btn:hover {
+	box-shadow: 5px 0px 45px rgba(255, 255, 255, 0.466);
+}
+
+.comprobante__mensaje-exito {
+	font-size: 14px;
+	color: #2cb31bf3;
+	display: none;
+}
+
+.comprobante__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.comprobante__grupo-correcto .comprobante__validacion-estado {
+	color: #2cb31bf3;
+	opacity: 1;
+}
+
+.comprobante__grupo-incorrecto .comprobante__label {
+	color: #be0000;
+}
+
+.comprobante__grupo-incorrecto .comprobante__validacion-estado {
+	color: #be0000;
+	opacity: 1;
+}
+
+.comprobante__grupo-incorrecto .comprobante__input {
+	border: 3px solid #be0000;
+}

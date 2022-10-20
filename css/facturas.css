@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {  
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    padding: 8%;
+    background-size: cover;
+    background: url(../img/fondo.jpg) no-repeat center bottom;
+  
+    
+}
+
+
+.listado__factura {
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.containerMaestro {
+    border: 1px solid rgb(255, 255, 255);;
+    height: 100%;
+    background: #5c0f06;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1F1C18, #530800);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1F1C18, #470700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+.container {
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    display:block;
+    background-color: aliceblue;
+    
+}
+
+.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.subtitulo{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+
+}
+
+.cuadro {font-weight: 750;
+    font-size: 25px;
+    flex-grow: 1;
+    border: 3px solid black;
+    color: black;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
