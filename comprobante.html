@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>comprobante</title>
+	<link rel="stylesheet" href="/css/comprobante.css">
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<form action="" class="comprobante" id="comprobante">
+
+				<!-- Grupo: Manzana -->
+				<div class="comprobante__grupo" id="grupo__manzana">
+					<label for="manzana" class="comprobante__label">Manzana</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="manzana" id="manzana" placeholder="...">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">La Manzana debe estar registrada.</p>
+				</div>
+
+				<!-- Grupo: Villa -->
+				<div class="comprobante__grupo" id="grupo__villa">
+					<label for="villa" class="comprobante__label">Villa</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="villa" id="villa" placeholder="...">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">La Villa debe estar registrada.</p>
+				</div>
+
+        <!-- Grupo: Tramite -->
+				<div class="comprobante__grupo" id="grupo__tramite">
+					<label for="tramite" class="comprobante__label">Numero de Tramite</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="tramite" id="tramite" placeholder="...">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">El numero de tramite debe ser valido.</p>
+				</div>
+<br>
+        <!-- Grupo: Banco -->
+				<div class="comprobante__grupo" id="grupo__banco">
+					<label for="banco" class="comprobante__label">Banco</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="banco" id="banco" placeholder="...">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">Ingrese una institucion bancaria valida.</p>
+				</div>
+<br>
+        <!-- Grupo: Fecha de Pago -->
+				<div class="comprobante__grupo" id="grupo__fecha">
+					<label for="fecha" class="comprobante__label">Fecha de fecha</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="fecha" id="fecha" placeholder="DD-MM-YYYY">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">Ingrese la fecha del fecha.</p>
+				</div>
+<br>
+        <!-- Grupo: Pago -->
+				<div class="comprobante__grupo" id="grupo__pago">
+					<label for="pago" class="comprobante__label">Pago</label>
+
+					<div class="comprobante__grupo-input">
+						<input type="text" class="comprobante__input" name="pago" id="pago" placeholder="$$$">
+						<i class="comprobante__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="comprobante__input-error">Ingrese el monto del pago a realizar.</p>
+				</div>
+
+				<!-- Mensaje de ERROR -->
+				<div class="comprobante__mensaje" id="comprobante__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el comprobante
+						correctamente. </p>
+				</div>
+
+				<!-- BOTON -->
+				<div class="comprobante__grupo comprobante__grupo-btn-enviar">
+					<button type="submit" class="comprobante__btn">Enviar</button>
+					<p class="comprobante__mensaje-exito" id="comprobante__mensaje-exito">Comprobante subido exitosamente!
+					</p>
+				</div>
+
+				<!-- BOTON guardar -->
+				<div class="comprobante__grupo comprobante__grupo-btn-guardar">
+					<button type="button" class="comprobante__btn1">GUARDAR</button>
+					<p class="comprobante__mensaje-exito" id="comprobante__mensaje-exito">Comprobante guardado!
+					</p>
+				</div>
+
+				<!-- BOTON cancelar -->
+				<div class="comprobante__grupo comprobante__grupo-btn-cancelar">
+					<button type="button" class="comprobante__btn1">CANCELAR</button>
+					<p class="comprobante__mensaje-exito" id="comprobante__mensaje-exito">comprobante cancelado!
+					</p>
+				</div>
+
+			</form>
+
+		</div>
+
+
+	</main>
+	<script src="/js/comprobante.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
